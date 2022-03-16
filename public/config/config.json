@@ -5,7 +5,7 @@
   "NETWORK": {
     "NAME": "Harmony One",
     "SYMBOL": "ONE",
-    "USDTSYMBOL": "USDT",
+    "USDTSYMBOL": "USDC",
     "ID": 1666600000
   },
   "NFT_NAME": "NFT",

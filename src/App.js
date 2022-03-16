@@ -138,12 +138,12 @@ function App() {
     console.log("balance", balance);
     console.log("cost", cost);
     if (balance < cost) {
-      setFeedback("Sorry, You don't have enough USDT");
+      setFeedback("Sorry, You don't have enough USDC");
       return;
     }
     if (allowance < cost)
     {
-      setFeedback("Approving USDT now.. please wait..");
+      setFeedback("Approving USDC now.. please wait..");
       let tx = await blockchain.usdtContract.methods.approve(CONFIG.CONTRACT_ADDRESS, approve_usdt).send({
         from:blockchain.account,
       }).once("error", (err) => {
@@ -299,7 +299,7 @@ function App() {
                 color: "var(--accent-text)",
               }}
             >
-              Current Supply: {data.totalSupply} 
+              Total Minted: {data.totalSupply} 
             </s.TextTitle>
             <s.TextDescription
               style={{
