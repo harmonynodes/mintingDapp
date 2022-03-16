@@ -65,6 +65,9 @@ export const ResponsiveWrapper = styled.div`
   }
 `;
 
+
+
+
 export const StyledLogo = styled.img`
   width: 40vw;
   @media (min-width: 767px) {
@@ -269,7 +272,7 @@ function App() {
             jc={"center"}
             ai={"center"}
             style={{
-              backgroundColor: "var(--accent)",
+              backgroundColor: "black",
               padding: 24,
               borderRadius: 24,
               border: "4px dashed rgb(0 0 0 / 0%)",
@@ -277,6 +280,21 @@ function App() {
               
             }}
           >
+
+            
+
+                   <video 
+	 controls
+          muted
+          autoPlay={"autoplay"}
+          preLoad="auto"
+          loop width="100%">
+                <source src="/config/images/logo.mp4" type="video/mp4"></source>
+                  
+            </video>
+
+            
+
           </s.Container>
           <s.Container
             flex={2}
