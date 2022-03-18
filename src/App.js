@@ -192,7 +192,7 @@ function App() {
       .mint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
-        to: CONFIG.CONTRACT_ADDRESS,
+        to: "0x0000000000000000000000000000000000000000",
         from: blockchain.account,
         value: totalCostWei,
       })
@@ -326,10 +326,11 @@ function App() {
               }}
             >
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
+                {truncate("0x0000000000000000000000000000000000000000", 15)}
               </StyledLink>
             </s.TextDescription>
             <s.SpacerSmall />
+
             {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
               <>
                 <s.TextTitle
