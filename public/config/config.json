@@ -1,7 +1,7 @@
 {
   "CONTRACT_ADDRESS": "0x29fb4090175d3e6be5c8c28665fad86071ce9acf",
   "USDT_CONTRACT_ADDRESS": "0x985458e523db3d53125813ed68c274899e9dfab4",
-  "SCAN_LINK": "https://explorer.harmony.one/address/0x29fb4090175d3e6be5c8c28665fad86071ce9acf",
+  "SCAN_LINK": "https://explorer.harmony.one/address/",
   "NETWORK": {
     "NAME": "Harmony One",
     "SYMBOL": "ONE",
