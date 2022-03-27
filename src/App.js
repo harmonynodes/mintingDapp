@@ -192,7 +192,7 @@ function App() {
       .mint(mintAmount)
       .send({
         gasLimit: String(totalGasLimit),
-        to: "0x0000000000000000000000000000000000000000",
+        to: "0x29fb4090175d3e6be5c8c28665fad86071ce9acf",
         from: blockchain.account,
         value: totalCostWei,
       })
@@ -326,7 +326,7 @@ function App() {
               }}
             >
               <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                {truncate("0x0000000000000000000000000000000000000000", 15)}
+                {truncate("0x29fb4090175d3e6be5c8c28665fad86071ce9acf", 15)}
               </StyledLink>
             </s.TextDescription>
             <s.SpacerSmall />
